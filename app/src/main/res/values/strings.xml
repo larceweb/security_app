@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AC_app</string>
+    <string name="txt_boton">Abrir </string>
+    <string name="txt_otravista">Otra vista </string>
+    <string name="btn_inicio_sesion">Ingresar </string>
+</resources>
