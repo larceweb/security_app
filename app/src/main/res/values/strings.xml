@@ -3,4 +3,21 @@
     <string name="txt_boton">Abrir </string>
     <string name="txt_otravista">Otra vista </string>
     <string name="btn_inicio_sesion">Ingresar </string>
+
+    <string name="perfil">Perfil</string>
+    <string name="Nombre_completo">Nombre Completo</string>
+    <string name="Rut">Rut</string>
+    <string name="Ntelefono">N° de Teléfono</string>
+    <string name="empresa">Empresa</string>
+    <string name="instalacion">Instalación</string>
+    <string name="Nemergencia">N° de Emergencia</string>
+    <string name="generatupin">Genera tu PIN</string>
+    <string name="cambiatucontrasena">Cambia tu Contraseña</string>
+    <string name="editaperfil">Edita tu Perfil</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="editaFoto">Edita tu fotografía</string>
+    <string name="nombreInstalacion">Nombre Instalación</string>
+    <string name="guardarDatos">Guarda tus datos</string>
+
+
 </resources>
