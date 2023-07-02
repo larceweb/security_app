@@ -11,23 +11,27 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:background="@drawable/icon_volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.007"
+        tools:ignore="SpeakableTextPresentCheck"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/perfil"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,6 +57,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/editaFoto"
             app:srcCompat="@drawable/icon_avatar" />
 
 
@@ -68,6 +73,7 @@
             android:paddingHorizontal="20dp"
             android:paddingVertical="8dp"
             android:textColor="@color/colorcaja_txt"
+            android:autofillHints="username"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,6 +88,7 @@
             android:layout_width="333dp"
             android:layout_height="55dp"
             android:layout_marginBottom="184dp"
+            android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
             android:hint="@string/Rut"
@@ -102,6 +109,7 @@
             android:id="@+id/editText3"
             android:layout_width="333dp"
             android:layout_height="55dp"
+            android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
             android:hint="@string/Ntelefono"
@@ -122,6 +130,7 @@
             android:id="@+id/editText4"
             android:layout_width="333dp"
             android:layout_height="55dp"
+            android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
             android:hint="@string/empresa"
@@ -143,6 +152,7 @@
             android:id="@+id/editText5"
             android:layout_width="333dp"
             android:layout_height="55dp"
+            android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
             android:hint="@string/instalacion"
@@ -164,6 +174,7 @@
             android:id="@+id/editText6"
             android:layout_width="333dp"
             android:layout_height="55dp"
+            android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
             android:hint="@string/Nemergencia"
@@ -183,8 +194,8 @@
 
         <Button
             android:id="@+id/btnPIN"
-            android:layout_width="333dp"
-            android:layout_height="47dp"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             android:background="@drawable/btn_circular_azul"
@@ -197,7 +208,7 @@
 
         <Button
             android:id="@+id/cambiarPass"
-            android:layout_width="333dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
@@ -211,7 +222,7 @@
 
         <Button
             android:id="@+id/editperfil"
-            android:layout_width="333dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
@@ -225,7 +236,7 @@
 
         <Button
             android:id="@+id/logout"
-            android:layout_width="333dp"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
