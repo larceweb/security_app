@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="CARD VIEW DESIGN"
+        android:text="Nombre"
         android:textColor="#fff"
         android:textSize="20dp" />
 
@@ -21,19 +21,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/title_view"
-        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
         android:columnCount="2"
         android:rowCount="3">
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="38dp"
             android:layout_row="0"
-            android:layout_rowWeight="1"
+            android:layout_rowWeight="0"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            android:background="#494949"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -53,8 +55,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PERFIL"
+                    android:text="Perfil"
                     android:textAlignment="center"
+                    android:textColor="#de000000"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -81,12 +85,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/language" />
+                    android:src="@drawable/horasextra_asistencia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LANGUAGE"
+                    android:text="Asistencia"
+                    android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -114,16 +120,20 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/chat" />
+                    android:background="#C5C5C5"
+                    android:src="@drawable/solicitudes" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CHAT"
+                    android:text="Solicitud"
+                    android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -147,17 +157,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/calendar" />
+                    android:src="@drawable/horasextra_asistencia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CALENDAR"
+                    android:text="Horas Extra"
+                    android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -181,12 +192,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/widgets" />
+                    android:src="@drawable/bonos" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="WIDGETS"
+                    android:text="Bonos"
+                    android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -214,15 +227,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/info" />
+                    android:src="@drawable/capacitaciones" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="INFO"
+                    android:text="Capacitación"
+                    android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
     </GridLayout>
 
