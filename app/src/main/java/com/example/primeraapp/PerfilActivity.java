@@ -23,8 +23,8 @@ public class PerfilActivity extends AppCompatActivity {
 
         btnvolver = findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v -> {
-            startActivity(new Intent(PerfilActivity.this, LoginActivity.class));
-            finish();
+                startActivity(new Intent(PerfilActivity.this, HomeActivity.class));
+                finish();
         });
 
 
