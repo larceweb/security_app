@@ -180,19 +180,16 @@
             android:autofillHints="phone"
             android:textSize="17sp" />
 
-
         <Button
             android:id="@+id/btnPIN"
             android:layout_width="320dp"
-            android:layout_height="50sp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="16dp"
             android:background="@drawable/btn_circular_azul"
             android:text="@string/guardarDatos"
             android:textColor="@color/white"
             android:textSize="17sp" />
 
-
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
