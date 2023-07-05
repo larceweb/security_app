@@ -183,7 +183,7 @@
             android:layout_width="320dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/btn_circular_azul"
             android:text="@string/guardarDatos"
             android:textColor="@color/white"
