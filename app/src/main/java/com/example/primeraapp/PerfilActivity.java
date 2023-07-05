@@ -11,7 +11,7 @@ import android.widget.Button;
 public class PerfilActivity extends AppCompatActivity {
 
 
-    public Button btnEditPerfil, btnvolver, btnLogin;
+    public Button btnEditPerfil, btnvolver;
 
 
 
@@ -23,8 +23,9 @@ public class PerfilActivity extends AppCompatActivity {
 
         btnvolver = findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v -> {
-                startActivity(new Intent(PerfilActivity.this, HomeActivity.class));
-                finish();
+            startActivity(new Intent(PerfilActivity.this, HomeActivity.class));
+            finish();
+
         });
 
 
