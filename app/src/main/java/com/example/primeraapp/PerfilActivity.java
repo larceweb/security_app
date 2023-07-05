@@ -11,7 +11,7 @@ import android.widget.Button;
 public class PerfilActivity extends AppCompatActivity {
 
 
-    public Button btnEditPerfil, btnvolver;
+    public Button btnEditPerfil, btnvolver, btnLogin;
 
 
 
