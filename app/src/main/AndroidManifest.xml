@@ -13,7 +13,10 @@
         android:theme="@style/Theme.PrimeraApp"
         tools:targetApi="31">
         <activity
-            android:name=".NotificacionesActivity"
+            android:name=".EditarPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
