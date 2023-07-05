@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".NotificacionesActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtNotificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textSize="20dp"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
