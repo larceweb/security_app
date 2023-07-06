@@ -21,6 +21,7 @@
             android:id="@+id/btnvolver"
             android:layout_width="65dp"
             android:layout_height="58dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/icon_volver"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -61,8 +62,8 @@
 
         <EditText
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="username"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -77,8 +78,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -93,8 +94,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -109,8 +110,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -125,8 +126,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -142,8 +143,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="15dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"

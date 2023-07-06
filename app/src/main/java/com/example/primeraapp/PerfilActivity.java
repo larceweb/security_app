@@ -29,7 +29,7 @@ public class PerfilActivity extends AppCompatActivity {
         });
 
 
-        btnEditPerfil=findViewById(R.id.editperfil);
+        btnEditPerfil = findViewById(R.id.editperfil);
         btnEditPerfil.setOnClickListener(v -> {
             startActivity(new Intent(PerfilActivity.this, EditarPerfilActivity.class));
             finish();

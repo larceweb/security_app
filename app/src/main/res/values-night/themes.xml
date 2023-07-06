@@ -2,7 +2,13 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PrimeraApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
+<<<<<<< HEAD
         <item name="android:statusBarColor">@color/colorprimary</item>
+=======
+
+        <item name="android:statusBarColor">@color/colorprimary</item>
+
+>>>>>>> perfil_new
     </style>
 
 

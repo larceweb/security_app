@@ -4,6 +4,10 @@
         <!-- Customize your light theme here. -->
 
         <item name="android:statusBarColor">@color/colorprimary</item>
+<<<<<<< HEAD
+=======
+
+>>>>>>> perfil_new
     </style>
 
     <style name="Theme.PrimeraApp" parent="Base.Theme.PrimeraApp" />
