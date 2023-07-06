@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorprimary"
-    tools:context=".PerfilActivity">
-
+    tools:context=".EditarPerfilActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -36,7 +35,6 @@
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,19 +48,27 @@
 
 
         <ImageView
-            android:id="@+id/img_perfil"
-            android:layout_width="211dp"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginBottom="6dp"
             android:contentDescription="@string/editaFoto"
-            app:srcCompat="@drawable/icon_avatar" />
+            app:srcCompat="@drawable/icon_camara" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/editaFoto"
+            android:textStyle="bold" />
 
 
         <EditText
+
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="username"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -77,8 +83,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -93,8 +99,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -109,8 +115,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -125,8 +131,8 @@
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
             android:autofillHints="name"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -138,12 +144,28 @@
             android:textColor="@color/colorcaja_txt"
             android:textSize="17sp" />
 
+        <EditText
+
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints="name"
+            android:background="@drawable/bordes_textos"
+            android:fontFamily="@font/roboto_normal"
+            android:hint="@string/nombreInstalacion"
+            android:inputType="textPersonName"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:textColor="@color/colorcaja_txt"
+            android:textSize="17sp" />
+
 
         <EditText
 
             android:layout_width="333dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="15dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
             android:autofillHints="phone"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
@@ -160,55 +182,14 @@
             android:layout_width="320dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="7dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/btn_circular_azul"
-            android:text="@string/generatupin"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toTopOf="@+id/cambiarPass"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/cambiarPass"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="7dp"
-            android:background="@drawable/btn_circular_azul"
-            android:text="@string/cambiatucontrasena"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toTopOf="@+id/editperfil"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/editperfil"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="7dp"
-            android:background="@drawable/btn_circular_azul"
-            android:text="@string/editaperfil"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toTopOf="@+id/logout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/logout"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="7dp"
-            android:background="@drawable/btn_circular_azul"
-            android:text="@string/cerrarsesion"
+            android:text="@string/guardarDatos"
             android:textColor="@color/white"
             android:textSize="17sp" />
-    </LinearLayout>
 
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
