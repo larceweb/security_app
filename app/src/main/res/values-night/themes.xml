@@ -3,6 +3,8 @@
     <style name="Base.Theme.PrimeraApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
 
+        <item name="android:statusBarColor">@color/colorprimary</item>
+
     </style>
 
 
