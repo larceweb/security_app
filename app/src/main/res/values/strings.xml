@@ -18,6 +18,8 @@
     <string name="editaFoto">Edita tu fotografía</string>
     <string name="nombreInstalacion">Nombre Instalación</string>
     <string name="guardarDatos">Guarda tus datos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
