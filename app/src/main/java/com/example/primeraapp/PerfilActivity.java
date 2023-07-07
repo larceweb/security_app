@@ -11,7 +11,7 @@ import android.widget.Button;
 public class PerfilActivity extends AppCompatActivity {
 
 
-    public Button btnEditPerfil, btnvolver;
+    public Button btnEditPerfil, btnvolver,btnlogout;
 
 
 
@@ -34,6 +34,14 @@ public class PerfilActivity extends AppCompatActivity {
             startActivity(new Intent(PerfilActivity.this, EditarPerfilActivity.class));
             finish();
         });
+
+
+        btnlogout=findViewById(R.id.cambiarPass);
+        btnlogout.setOnClickListener(v->{
+            startActivity(new Intent(PerfilActivity.this,CambiarPassActivity.class ));
+            finish();
+        });
+
 
 
     }

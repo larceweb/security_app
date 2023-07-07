@@ -18,6 +18,10 @@
     <string name="editaFoto">Edita tu fotografía</string>
     <string name="nombreInstalacion">Nombre Instalación</string>
     <string name="guardarDatos">Guarda tus datos</string>
-
+    <string name="cambiarpass">Cambia tu contraseña</string>
+    <string name="passactual">Contraseña Actual</string>
+    <string name="passnew">Contraseña Nueva</string>
+    <string name="infoPass">· Recuerda que tu contraseña debe contener números, letras y tener un mínimo de 6 caracteres.</string>
+    <string name="actualizar">Actualizar</string>
 
 </resources>
