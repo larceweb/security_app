@@ -3,7 +3,7 @@
     <string name="txt_boton">Abrir </string>
     <string name="txt_otravista">Otra vista </string>
     <string name="btn_inicio_sesion">Ingresar </string>
-
+    <string name="asistencia">Asistencia</string>
     <string name="perfil">Perfil</string>
     <string name="Nombre_completo">Nombre Completo</string>
     <string name="Rut">Rut</string>
@@ -23,5 +23,10 @@
     <string name="passnew">Contraseña Nueva</string>
     <string name="infoPass">· Recuerda que tu contraseña debe contener números, letras y tener un mínimo de 6 caracteres.</string>
     <string name="actualizar">Actualizar</string>
+    <string name="selectoption">Selecciona una opción</string>
+    <string name="marcarasistencia">Marcar Asistencia</string>
+    <string name="inasistencia">Inasistencia</string>
+    <string name="reporte">Reportes</string>
+    <string name="horario">Horario</string>
 
 </resources>
