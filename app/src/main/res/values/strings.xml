@@ -18,6 +18,7 @@
     <string name="editaFoto">Edita tu fotografía</string>
     <string name="nombreInstalacion">Nombre Instalación</string>
     <string name="guardarDatos">Guarda tus datos</string>
+    <string name="generartupin">Generar Tu Pin</string>
 
 
 </resources>
