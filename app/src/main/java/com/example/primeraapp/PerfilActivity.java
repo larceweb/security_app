@@ -12,9 +12,9 @@ import android.widget.Toast;
 import com.hanks.passcodeview.PasscodeView;
 
 public class PerfilActivity extends AppCompatActivity {
-    PasscodeView passcodeView;
 
-    public Button btnEditPerfil, btnvolver, btnPIN;
+
+    public Button btnEditPerfil, btnvolver, btnPin;
 
 
 
@@ -38,8 +38,8 @@ public class PerfilActivity extends AppCompatActivity {
             finish();
         });
 
-        btnPIN = findViewById(R.id.btnPIN);
-        btnPIN.setOnClickListener(v -> {
+        btnPin = findViewById(R.id.btnPIN);
+        btnPin.setOnClickListener(v -> {
             startActivity(new Intent(PerfilActivity.this, GenerarPinActivity.class));
             finish();
 
