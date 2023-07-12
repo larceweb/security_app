@@ -3,7 +3,7 @@
     <string name="txt_boton">Abrir </string>
     <string name="txt_otravista">Otra vista </string>
     <string name="btn_inicio_sesion">Ingresar </string>
-    <string name="asistencia">Asistencia</string>
+
     <string name="perfil">Perfil</string>
     <string name="Nombre_completo">Nombre Completo</string>
     <string name="Rut">Rut</string>
@@ -18,21 +18,8 @@
     <string name="editaFoto">Edita tu fotografía</string>
     <string name="nombreInstalacion">Nombre Instalación</string>
     <string name="guardarDatos">Guarda tus datos</string>
-    <string name="cambiarpass">Cambia tu contraseña</string>
-    <string name="passactual">Contraseña Actual</string>
-    <string name="passnew">Contraseña Nueva</string>
-    <string name="infoPass">· Recuerda que tu contraseña debe contener números, letras y tener un mínimo de 6 caracteres.</string>
-    <string name="asistencia_marcar_rf">Asistencia / Marcar asistencia / Reconocimiento Facial</string>
-    <string name="primer_mensaje_rf">Busca un lugar iluminado y centra tu rostro en el sector delimitado. Para confirmar tu identidad, debes realizar el siguiente gesto:</string>
-    <string name="noti_modal_PIN">Se ha enviado un código de 6 dígitos, este aparecerá en la campana de notificaciones de tu aplicación.</string>
-    <string name="ir_a_noti">Ir a notificaciones</string>
-    <string name="gesto_mensaje_rf">Cierra tu ojo izquierdo.</string>
-    <string name="actualizar">Actualizar</string>
-    <string name="selectoption">Selecciona una opción</string>
-    <string name="marcarasistencia">Marcar Asistencia</string>
-    <string name="inasistencia">Inasistencia</string>
-    <string name="reporte">Reportes</string>
-    <string name="horario">Horario</string>
-    <string name="generartupin">Generar Tu Pin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
