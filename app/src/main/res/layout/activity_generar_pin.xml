@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_normal"
-            android:text="Genere su Pin"
+            android:text="Genere su PIN"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -59,11 +59,12 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Genere Su Pin"
+            android:text="Genere su PIN"
             android:textColor="@color/black"
             android:textSize="26sp" />
 
         <EditText
+            android:id="@+id/pin"
             android:layout_width="333dp"
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
@@ -78,6 +79,7 @@
             android:textColor="@color/colorcaja_txt"
             android:textSize="17sp" />
         <EditText
+            android:id="@+id/againPin"
             android:layout_width="333dp"
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
@@ -104,7 +106,7 @@
             android:layout_marginBottom="270dp"
             android:background="@drawable/btn_circular_azul"
             android:fontFamily="@font/roboto_normal"
-            android:text="Generar tu Pin"
+            android:text="Generar PIN"
             android:textColor="@color/white"
             android:textSize="17sp"
             app:layout_constraintBottom_toTopOf="@+id/logout"
