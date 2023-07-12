@@ -22,6 +22,9 @@
     <string name="passactual">Contraseña Actual</string>
     <string name="passnew">Contraseña Nueva</string>
     <string name="infoPass">· Recuerda que tu contraseña debe contener números, letras y tener un mínimo de 6 caracteres.</string>
+    <string name="asistencia_marcar_rf">Asistencia / Marcar asistencia / Reconocimiento Facial</string>
+    <string name="primer_mensaje_rf">Busca un lugar iluminado y centra tu rostro en el sector delimitado. Para confirmar tu identidad, debes realizar el siguiente gesto:</string>
+    <string name="gesto_mensaje_rf">Cierra tu ojo izquierdo.</string>
     <string name="actualizar">Actualizar</string>
     <string name="selectoption">Selecciona una opción</string>
     <string name="marcarasistencia">Marcar Asistencia</string>
