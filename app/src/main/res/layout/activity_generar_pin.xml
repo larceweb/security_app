@@ -70,7 +70,7 @@
             android:autofillHints="username"
             android:background="@drawable/bordes_textos"
             android:fontFamily="@font/roboto_normal"
-            android:hint="ingrese su pin "
+            android:hint="Ingrese su pin "
             android:inputType="numberPassword"
             android:orientation="horizontal"
             android:paddingHorizontal="20dp"

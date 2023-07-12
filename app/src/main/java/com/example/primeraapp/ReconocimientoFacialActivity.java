@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.google.android.gms.vision.CameraSource;
+
 
 public class ReconocimientoFacialActivity extends AppCompatActivity {
 

@@ -7,18 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.Toast;
-
-import com.hanks.passcodeview.PasscodeView;
 
 public class PerfilActivity extends AppCompatActivity {
 
 
-<<<<<<< HEAD
-    public Button btnEditPerfil, btnvolver,btnlogout;
-=======
-    public Button btnEditPerfil, btnvolver, btnPin;
->>>>>>> perfil_new
+
+    public Button btnEditPerfil, btnvolver,btnlogout,btnPin;
 
 
 
