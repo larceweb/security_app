@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
-import com.hanks.passcodeview.PasscodeView;
+
 
 public class GenerarPinActivity extends AppCompatActivity {
 

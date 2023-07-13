@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/roboto_normal"
-            android:text="@string/asistencia_marcar_rf"
+            android:text="reconocimiento facial"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />

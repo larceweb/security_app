@@ -6,6 +6,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,14 +19,16 @@ public class PerfilActivity extends AppCompatActivity {
     public Button btnEditPerfil, btnvolver,btnlogout,btnPin,btnNotificaciones;
    // private String rut;
 
-    LinearLayout my_Modal, fond_opaco_overbox; //Linear Layout para activar el modal de Notificación.
-    LinearLayout Layout_1,Layout_2; //Layouts de Pefil .
 
-    @SuppressLint("MissingInflatedId")
+    public Dialog dialogo_modal;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
+        dialogo_modal = new Dialog(PerfilActivity.this);
 
         btnvolver = findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v -> {
@@ -38,42 +42,10 @@ public class PerfilActivity extends AppCompatActivity {
             finish();
         });
 
-        btnNotificaciones = findViewById(R.id.ir_a_notificaciones);//Btn para ir al Layout de Notificaciones
         btnPin = findViewById(R.id.btnPIN);
-        Layout_1 = findViewById(R.id.linearLayout1);//Layout principal del Perfil
-        Layout_2 = findViewById(R.id.linearLayout2);//Layout de txt btn del Perfil
-        my_Modal = findViewById(R.id.myContentModal); //Layout del Modal
-        fond_opaco_overbox = findViewById(R.id.overbox);//Fondo opaco para visualizar bien el Modal
-        my_Modal.setAlpha(0);//Modal deshabilitado
-        fond_opaco_overbox.setAlpha(0);
-
         btnPin.setOnClickListener(v -> {
-            my_Modal.setAlpha(1);
-            fond_opaco_overbox.setAlpha(1);
-
-            for (int h = 0; h < Layout_1.getChildCount(); h++){
-                View elementos_hijos = Layout_1.getChildAt(h);
-                elementos_hijos.setEnabled(false);
-            }
-            for (int i = 0; i < Layout_2.getChildCount(); i++) {
-                View elementos_hijos = Layout_2.getChildAt(i);
-                elementos_hijos.setEnabled(false);
-            }
-
+           infoPin();
         });
-
-        btnNotificaciones.setOnClickListener(v -> {
-            startActivity(new Intent(PerfilActivity.this,HomeActivity.class));
-            finish();
-
-            String PINdefault = "175865";
-
-
-
-
-        });
-
-
 
 
 
@@ -89,7 +61,33 @@ public class PerfilActivity extends AppCompatActivity {
 
     }
 
+
+    public void infoPin(){
+
+        Button btniraNoti;
+        dialogo_modal.setContentView(R.layout.modalpin);
+        btniraNoti = dialogo_modal.findViewById(R.id.ir_a_notificaciones);
+
+
+        btniraNoti.setOnClickListener(v -> {
+            Intent notif = new Intent(this,HomeActivity.class);
+            startActivity(notif);
+            finish();
+            dialogo_modal.setCancelable(true);
+            dialogo_modal.dismiss();
+        });
+
+        dialogo_modal.show();
+        dialogo_modal.setCancelable(false);
+
+    }
+
+
 }
+
+
+
+
 
 
 
