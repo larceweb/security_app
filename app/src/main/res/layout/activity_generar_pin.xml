@@ -36,12 +36,9 @@
 
     </LinearLayout>
 
-
-
-
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="625dp"
         android:background="@drawable/topesquinas_redondeadas"
         android:gravity="center"
         android:orientation="vertical"
@@ -54,46 +51,14 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:fontFamily="@font/roboto_normal"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_normal"
             android:gravity="center"
             android:text="Genere Su Pin"
             android:textColor="@color/black"
             android:textSize="26sp" />
-
-        <EditText
-            android:layout_width="333dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:autofillHints="username"
-            android:background="@drawable/bordes_textos"
-            android:fontFamily="@font/roboto_normal"
-            android:hint="ingrese su pin "
-            android:inputType="numberPassword"
-            android:orientation="horizontal"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="8dp"
-            android:textColor="@color/colorcaja_txt"
-            android:textSize="17sp" />
-        <EditText
-            android:layout_width="333dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:autofillHints="username"
-            android:background="@drawable/bordes_textos"
-            android:fontFamily="@font/roboto_normal"
-            android:hint="Repita su Pin 6 digitos"
-            android:inputType="numberPassword"
-            android:orientation="horizontal"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="8dp"
-            android:textColor="@color/colorcaja_txt"
-            android:textSize="17sp" />
-
-
-
 
 
         <Button
@@ -111,12 +76,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-
-
-
     </LinearLayout>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
