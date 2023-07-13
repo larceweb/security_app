@@ -35,6 +35,7 @@
     <string name="actualizar">Actualizar</string>
     <string name="icono_notificaciones">Icono de campana notificaciones</string>
     <string name="N">N</string>
+    <string name="mensaje_entrada">Tu código de Ingreso es</string>
 
 
 </resources>

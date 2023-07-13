@@ -72,7 +72,10 @@ public class PerfilActivity extends AppCompatActivity {
 
 
         btniraNoti.setOnClickListener(v -> {
+
+            String Pin = "123456";// Aquí se asigna el PIN generado
             Intent notif = new Intent(PerfilActivity.this,Notificaciones.class);
+            notif.putExtra("PIN",Pin);
             startActivity(notif);
             finish();
             //dialogo_modal.setCancelable(true);
