@@ -26,9 +26,7 @@ public class PerfilActivity extends AppCompatActivity {
         btnvolver.setOnClickListener(v -> {
             startActivity(new Intent(PerfilActivity.this, HomeActivity.class));
             finish();
-
         });
-
 
         btnEditPerfil = findViewById(R.id.editperfil);
         btnEditPerfil.setOnClickListener(v -> {
