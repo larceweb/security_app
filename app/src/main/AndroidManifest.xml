@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.camera" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +19,9 @@
         android:theme="@style/Theme.PrimeraApp"
         tools:targetApi="31">
         <activity
-
+            android:name=".Notificaciones"
+            android:exported="false" />
+        <activity
             android:name=".ReconocimientoFacialActivity"
             android:exported="false" />
         <activity
@@ -26,7 +30,6 @@
         <activity
             android:name=".CambiarPassActivity"
             android:exported="false" />
-
         <activity
             android:name=".GenerarPinActivity"
             android:exported="false" />
@@ -49,8 +52,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

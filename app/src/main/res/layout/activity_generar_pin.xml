@@ -96,7 +96,6 @@
 
 
 
-
         <Button
             android:id="@+id/btnGenerarpin"
             android:layout_width="200dp"

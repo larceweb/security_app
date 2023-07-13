@@ -34,6 +34,7 @@
     <string name="infoPass">Recuerda que tu contraseña debe contener números, letras y tener un mínimo de 6 caracteres.</string>
     <string name="actualizar">Actualizar</string>
     <string name="icono_notificaciones">Icono de campana notificaciones</string>
+    <string name="N">N</string>
 
 
 </resources>

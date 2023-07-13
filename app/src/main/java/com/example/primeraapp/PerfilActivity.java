@@ -72,11 +72,11 @@ public class PerfilActivity extends AppCompatActivity {
 
 
         btniraNoti.setOnClickListener(v -> {
-            Intent notif = new Intent(this,HomeActivity.class);
+            Intent notif = new Intent(PerfilActivity.this,Notificaciones.class);
             startActivity(notif);
             finish();
-            dialogo_modal.setCancelable(true);
-            dialogo_modal.dismiss();
+            //dialogo_modal.setCancelable(true);
+            //dialogo_modal.dismiss();
         });
 
         dialogo_modal.show();
