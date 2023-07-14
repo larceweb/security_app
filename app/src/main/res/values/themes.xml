@@ -4,12 +4,7 @@
         <!-- Customize your light theme here. -->
 
         <item name="android:statusBarColor">@color/colorprimary</item>
-
     </style>
 
     <style name="Theme.PrimeraApp" parent="Base.Theme.PrimeraApp" />
 </resources>
-
-
-
-
