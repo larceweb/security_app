@@ -2,18 +2,12 @@ package com.example.primeraapp;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-
-import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-import android.widget.LinearLayout;
+
 
 
 public class PerfilActivity extends AppCompatActivity {
@@ -56,10 +50,6 @@ public class PerfilActivity extends AppCompatActivity {
             startActivity(new Intent(PerfilActivity.this,CambiarPassActivity.class ));
             finish();
         });
-
-
-
-
 
     }
 
