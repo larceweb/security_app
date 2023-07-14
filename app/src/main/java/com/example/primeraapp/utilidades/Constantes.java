@@ -6,3 +6,4 @@ public class Constantes {
     public static final String PHONE = "phone";
     public static final String LOG_TAG = "node-login-android";
 }
+

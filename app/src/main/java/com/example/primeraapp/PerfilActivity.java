@@ -12,7 +12,7 @@ import android.widget.Button;
 public class PerfilActivity extends AppCompatActivity {
 
 
-    public Button btnEditPerfil, btnvolver, btnPin;
+    public Button btnEditPerfil, btnvolver;
 
 
 
@@ -34,12 +34,7 @@ public class PerfilActivity extends AppCompatActivity {
             finish();
         });
 
-        btnPin = findViewById(R.id.btnPIN);
-        btnPin.setOnClickListener(v -> {
-            startActivity(new Intent(PerfilActivity.this, GenerarPinActivity.class));
-            finish();
 
-        });
 
     }
 }
