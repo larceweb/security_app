@@ -30,7 +30,7 @@
             android:layout_marginBottom="20dp"
             android:background="@color/white"
             android:fontFamily="@font/roboto_normal"
-            android:hint="Usuario/telefono"
+            android:hint="N de teléfono"
             android:inputType="phone"
             android:textSize="18sp"
             android:orientation="horizontal"
@@ -53,18 +53,26 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:layout_width="303dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/roboto_normal"
             android:layout_marginRight="20dp"
             android:background="@drawable/btn_circular_azul"
-
             android:padding="10dp"
             android:text="@string/btn_inicio_sesion"
             android:textSize="17sp"
             android:textColor="@color/white">
-
         </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+
+
+
     </LinearLayout>
 </RelativeLayout>
