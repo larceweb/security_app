@@ -2,11 +2,16 @@ package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
-import com.hanks.passcodeview.PasscodeView;
+
+
+
+import android.os.Bundle;
+
 
 public class GenerarPinActivity extends AppCompatActivity {
 

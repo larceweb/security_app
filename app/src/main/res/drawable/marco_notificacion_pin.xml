@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Capa de fondo (drawable1) -->
+    <item
+        android:drawable="@drawable/topesquinas_redondeadas"
+        android:top="30dp"
+        android:gravity="center"
+        />
+
+    <!-- Capa superior (drawable2) -->
+    <item
+        android:drawable="@drawable/testnoti"
+        android:top="-58dp"
+        android:right="-190dp"
+        android:bottom="10dp"
+        android:left="20dp" />
+</layer-list>
