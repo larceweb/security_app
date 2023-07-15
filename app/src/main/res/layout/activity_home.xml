@@ -66,7 +66,7 @@
                     android:src="@drawable/perfil" />
 
                 <TextView
-                    android:id="@+id/cardviewPerfil"
+                    android:id="@+id/perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Perfil"
@@ -102,6 +102,7 @@
                     android:src="@drawable/horasextra_asistencia" />
 
                 <TextView
+                    android:id="@+id/asistencia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Asistencia"
