@@ -55,13 +55,14 @@
             android:text="@string/mensajeOlvidePass"/>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btningresar"
         android:layout_width="303dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:fontFamily="@font/roboto_normal"
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_circular_azul"
+        android:contentDescription="@string/btn_description_ingresaralPIN"
         android:padding="10dp"
         android:text="@string/btn_inicio_sesion"
         android:textSize="17sp"

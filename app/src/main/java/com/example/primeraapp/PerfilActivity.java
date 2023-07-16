@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    public Button btnEditPerfil, btnvolver,btnlogout,btnPin,btnNotificaciones;
+    public Button btnEditPerfil, btnvolver,btnlogout,btnPin;
    // private String rut;
 
 

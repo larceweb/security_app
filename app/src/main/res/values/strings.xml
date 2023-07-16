@@ -36,11 +36,14 @@
     <string name="icono_notificaciones">Icono de campana notificaciones</string>
     <string name="N">N</string>
     <string name="mensaje_entrada">Tu código de Ingreso es</string>
-    <string name="n_fono">N° de teléfono (89898989)</string>
+    <string name="n_fono">N° de teléfono</string>
     <string name="contrasena">Contraseña</string>
     <string name="olvidepass">¿Olvidaste tu contraseña?</string>
     <string name="hazclickaqui">Haz clic aquí</string>
     <string name="mensajeOlvidePass">• Si tu teléfono es valido te enviaremos un SMS</string>
+    <string name="btn_description_ingresaralPIN">boton que lleva al ingreso del PIN</string>
+    <string name="ingresa_tu_pintexto">Ingresa tu pin</string>
+    <string name="aceptar">Aceptar</string>
 
 
 </resources>

@@ -19,6 +19,9 @@
         android:theme="@style/Theme.PrimeraApp"
         tools:targetApi="31">
         <activity
+            android:name=".PinContrasenaActivity"
+            android:exported="false" />
+        <activity
             android:name=".OlvidarPassActivity"
             android:exported="false" />
         <activity

@@ -4,19 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.text.Html;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.telephony.PhoneNumberUtils;
+import android.widget.Toast;
+
+import com.example.primeraapp.clases.ValidarPhone;
 
 public class LoginActivity extends AppCompatActivity {
 
 
     TextView textAc,textelefono,txtolvidepass;
+     EditText phoneNumber;
     Button btnOtra;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,19 +45,8 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         });
 
-
-
-
-        textelefono=findViewById(R.id.textPhone);
-        textelefono.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
-        textelefono.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    formatPhoneNumber();
-                }
-            }
-        });
+        phoneNumber = findViewById(R.id.textPhone);
+        ValidarPhone.setupPhoneNumberValidation(phoneNumber);
 
 
 
@@ -59,39 +54,25 @@ public class LoginActivity extends AppCompatActivity {
         btnOtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, PerfilActivity.class);
-                startActivity(intent);
+                validaPhone();
             }
         });
     }
 
-    //Validación número de celular, formato 912345678
-    private void formatPhoneNumber() {
-        String phoneNumber = textelefono.getText().toString().trim();
-        String cleanedNumber = PhoneNumberUtils.stripSeparators(phoneNumber);
 
-        if (cleanedNumber.length() == 8 || cleanedNumber.length() == 9) {
-            if (cleanedNumber.length() == 8) {
-                cleanedNumber = "+569" + cleanedNumber;
-            }
+    private void validaPhone() {
 
-            StringBuilder formattedNumber = new StringBuilder();
-            formattedNumber.append(cleanedNumber.substring(0, 4));
-            formattedNumber.append(" ");
-            //formattedNumber.append(cleanedNumber.substring(1, 5));
-            //formattedNumber.append(" ");
-            formattedNumber.append(cleanedNumber.substring(4));
-
-            textelefono.setText(formattedNumber.toString());
-        }
-
-        if(cleanedNumber.length()<=7){
-            textelefono.setError("Número Incorrecto");
-        }
-        else {
-            textelefono.setError("El formato debe ser así: 89898989");
+        if (phoneNumber.length() != 8) {
+            Toast.makeText(this, "Verifica tu número de teléfono", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(LoginActivity.this, PerfilActivity.class);
+            startActivity(intent); // El número de teléfono es válido, realiza otras acciones aquí.
         }
     }
+
+
+
+
 
 
 
