@@ -43,6 +43,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
 
+    //Lib para el PIN, mucho mejor que la anterior Librería.
     implementation 'io.github.chaosleung:pinview:1.4.4'
 
 
