@@ -1,6 +1,7 @@
 package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -55,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 validaPhone();
+
             }
         });
     }
@@ -65,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         if (phoneNumber.length() != 8) {
             Toast.makeText(this, "Verifica tu número de teléfono", Toast.LENGTH_SHORT).show();
         } else {
-            Intent intent = new Intent(LoginActivity.this, PerfilActivity.class);
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
             startActivity(intent); // El número de teléfono es válido, realiza otras acciones aquí.
         }
     }
