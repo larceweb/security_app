@@ -16,18 +16,13 @@ import android.os.Bundle;
 public class GenerarPinActivity extends AppCompatActivity {
 
 
-    public Button btnvolver;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generar_pin);
 
-        btnvolver=findViewById(R.id.btnvolver);
-        btnvolver.setOnClickListener(v->{
-            startActivity(new Intent(GenerarPinActivity.this,PerfilActivity.class));
-            finish();
-        });
 
     }
 }
