@@ -15,14 +15,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import android.widget.Toast;
 
-
 import com.example.primeraapp.clases.ValidarPhone;
+import com.example.primeraapp.io.UserApiAdapter;
+import com.example.primeraapp.io.UserApiService;
+import com.example.primeraapp.model.Users;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 
-public class LoginActivity extends AppCompatActivity{
+
+public class LoginActivity extends AppCompatActivity {
 
     TextView textAc,textelefono,txtolvidepass;
      EditText phoneNumber;
@@ -76,7 +86,7 @@ public class LoginActivity extends AppCompatActivity{
             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
             startActivity(intent); // El número de teléfono es válido, realiza otras acciones aquí.
         }
-    }
 
+    }
 
 }
