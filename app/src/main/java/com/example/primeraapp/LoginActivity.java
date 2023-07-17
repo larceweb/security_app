@@ -12,7 +12,16 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.telephony.PhoneNumberUtils;
 
-public class LoginActivity extends AppCompatActivity {
+import com.example.primeraapp.io.UserApiAdapter;
+import com.example.primeraapp.model.Users;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class LoginActivity extends AppCompatActivity  {
 
 
     TextView textAc,textelefono;
@@ -69,9 +78,11 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             textelefono.setError("Número inválido");
         }
+        //metodo retrofit
+        /*
+     Call<ArrayList<Users>> call = UserApiAdapter.getApiService().getUsers();
+        call.enqueue((Callback<ArrayList<Users>>) this);
     }
-
-
-
-
+   */
+    }
 }
