@@ -10,12 +10,12 @@ public class ValidarPhone {
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // No se requiere ninguna acción antes de que el texto cambie.
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // No se requiere ninguna acción mientras el texto cambia.
+
             }
 
             @Override

@@ -1,26 +1,28 @@
 package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Message;
-import android.telephony.PhoneNumberFormattingTextWatcher;
+
 import android.text.Html;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.telephony.PhoneNumberUtils;
+
 import android.widget.Toast;
+
 
 import com.example.primeraapp.clases.ValidarPhone;
 
-public class LoginActivity extends AppCompatActivity {
 
+
+public class LoginActivity extends AppCompatActivity{
 
     TextView textAc,textelefono,txtolvidepass;
      EditText phoneNumber;
@@ -29,6 +31,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_main);
+
+
+
+
 
         textAc = findViewById(R.id.textAc);
         String text = "<font color=#f7931e>AC</font> <font color=#ECF0F1>SECURITY</font>";
@@ -71,12 +77,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent); // El número de teléfono es válido, realiza otras acciones aquí.
         }
     }
-
-
-
-
-
-
 
 
 }
