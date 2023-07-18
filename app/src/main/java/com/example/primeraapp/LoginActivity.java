@@ -65,6 +65,9 @@ public class LoginActivity extends AppCompatActivity {
         btnOtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
                 if (Phone.getText().toString().isEmpty() && Password.getText().toString().isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Ingrese el datos otra vez", Toast.LENGTH_SHORT).show();
                     return;
@@ -73,10 +76,6 @@ public class LoginActivity extends AppCompatActivity {
                 postData(Phone.getText().toString(), Password.getText().toString());
             }
 
-            {
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(intent); //
-            }
 
 
         });
@@ -90,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
         // on below line we are creating a retrofit
         // builder and passing our base url
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://68.183.144.230:3000/api/users")
+                .baseUrl("http://68.183.144.230:3000/api/auth/login/")
 
                 // as we are sending data in json format so
                 // we have to add Gson converter factory

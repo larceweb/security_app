@@ -10,6 +10,20 @@ public class Users {
     String avatar;
     String token;
     String refreshToken;
+    public Users(int id, String name, String phone, String password, String email,
+                 String role, String avatar, String token, String refreshToken) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.password = password;
+        this.email = email;
+        this.role = role;
+        this.avatar = avatar;
+        this.token = token;
+        this.refreshToken = refreshToken;
+    }
+
+
 
     public int getId() {
         return id;
