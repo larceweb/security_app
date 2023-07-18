@@ -16,7 +16,7 @@ public class UserApiAdapter {
     /**
      * Localhost IP for AVD emulators: 10.0.2.2
      */
-    private static final String BASE_URL = "http://68.183.144.230:3000/api/users";
+    private static final String BASE_URL = "";
 
     public static UserApiAdapter getApiService() {
         // Creamos un interceptor y le indicamos el log level a usar

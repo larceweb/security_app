@@ -98,7 +98,12 @@
                 android:lineSpacingExtra="8sp"
                 android:textColor="#F7931E"
                 android:text=""/>
-
+            <ProgressBar
+                android:id="@+id/idLoadingPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
 
         </LinearLayout>
 

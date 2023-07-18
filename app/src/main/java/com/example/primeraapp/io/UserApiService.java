@@ -1,6 +1,6 @@
 package com.example.primeraapp.io;
 
-import com.example.primeraapp.io.response.UsersResponse;
+import com.example.primeraapp.model.DataModal;
 import com.example.primeraapp.model.Users;
 
 import java.util.ArrayList;
@@ -15,5 +15,5 @@ public interface UserApiService {
     Call<ArrayList<Users>>getUsers();
 
     @POST("users")
-    Call<Users> createPost(@Body Users Users);
+    Call<DataModal> createPost(@Body DataModal dataModal);
 }
