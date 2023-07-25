@@ -11,17 +11,17 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
- TextView perfil;
- TextView asistencia;
+ TextView pvd,chip;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        perfil = findViewById(R.id.perfil);
-        asistencia = findViewById(R.id.asistencia);
-        perfil.setOnClickListener(new View.OnClickListener() {
+        pvd = findViewById(R.id.pvd);
+        chip = findViewById(R.id.chip);
+        pvd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, PerfilActivity.class));
@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-        asistencia.setOnClickListener(new View.OnClickListener() {
+        chip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, AsistenciaActivity.class));

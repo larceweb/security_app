@@ -22,13 +22,7 @@
             android:name=".PinContrasenaActivity"
             android:exported="false" />
         <activity
-            android:name=".OlvidarPassActivity"
-            android:exported="false" />
-        <activity
             android:name=".Notificaciones"
-            android:exported="false" />
-        <activity
-            android:name=".ReconocimientoFacialActivity"
             android:exported="false" />
         <activity
             android:name=".AsistenciaActivity"

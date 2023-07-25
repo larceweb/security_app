@@ -9,7 +9,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="133dp"
+        android:layout_height="37dp"
         android:background="@drawable/bg_view"
         android:paddingBottom="10dp"
         tools:ignore="MissingConstraints" />
@@ -20,52 +20,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
-        <TextView
-            android:id="@+id/txtNombreCarview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:text="Nombre"
-            android:textColor="#fff"
-            android:textSize="17dp"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/txtCargo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:text="Cargo"
-            android:textColor="#fff"
-            android:textSize="17dp"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/txtinstalacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:text="Instalacion"
-            android:textColor="#fff"
-            android:textSize="17dp"
-            tools:ignore="MissingConstraints" />
+
+
     </LinearLayout>
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/campana"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="7dp"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="341dp"
+        android:layout_height="466dp"
         android:layout_below="@+id/layoutDatosTOP"
         android:columnCount="2"
         android:rowCount="3"
@@ -77,15 +39,15 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_row="0"
             android:layout_rowWeight="0"
             android:layout_column="0"
-            android:layout_marginStart="10dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="#151515"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="#e0e0e0"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
 
@@ -95,8 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -107,13 +69,13 @@
                     android:src="@drawable/perfil" />
 
                 <TextView
-                    android:id="@+id/perfil"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/pvd"
+                    android:layout_width="94dp"
                     android:layout_height="wrap_content"
-                    android:text="Perfil"
                     android:layout_marginBottom="10dp"
+                    android:text="Crear Pdv"
                     android:textAlignment="center"
-                    android:textColor="#de000000"
+                    android:textColor="#DEF1F1F1"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -124,11 +86,11 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_rowWeight="1"
-            app:cardBackgroundColor="#e0e0e0"
-            android:layout_marginEnd="10dp"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#1E1D1D"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -137,8 +99,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -149,13 +111,13 @@
                     android:src="@drawable/horasextra_asistencia" />
 
                 <TextView
-                    android:id="@+id/asistencia"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/chip"
+                    android:layout_width="81dp"
                     android:layout_height="wrap_content"
-                    android:text="Asistencia"
                     android:layout_marginBottom="10dp"
+                    android:text="Chips"
                     android:textAlignment="center"
-                    android:textColor="#de000000"
+                    android:textColor="#DEF1F1F1"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -166,11 +128,11 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_rowWeight="1"
-            android:layout_marginStart="10dp"
-            app:cardBackgroundColor="#e0e0e0"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="#e0e0e0"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -179,8 +141,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -193,8 +155,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Solicitud"
                     android:layout_marginBottom="10dp"
+                    android:text="Solicitud"
                     android:textAlignment="center"
                     android:textColor="#de000000"
                     android:textSize="16sp"
@@ -210,19 +172,19 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            app:cardBackgroundColor="#e0e0e0"
             android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#e0e0e0"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            android:layout_marginEnd="10dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -235,8 +197,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Horas Extra"
                     android:layout_marginBottom="10dp"
+                    android:text="Horas Extra"
                     android:textAlignment="center"
                     android:textColor="#de000000"
                     android:textSize="16sp"
@@ -248,12 +210,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
-            app:cardBackgroundColor="#e0e0e0"
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:layout_marginStart="10dp"
             android:layout_gravity="fill"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="#e0e0e0"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -262,8 +224,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -276,9 +238,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:text="Bonos"
                     android:textAlignment="center"
-                    android:layout_marginBottom="10dp"
                     android:textColor="#de000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -293,18 +255,18 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
             app:cardBackgroundColor="#e0e0e0"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            android:layout_marginEnd="10dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:gravity="start"
                 android:layout_marginEnd="20dp"
+                android:gravity="start"
                 android:orientation="vertical">
 
                 <ImageView
@@ -317,8 +279,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Capacitación"
                     android:layout_marginBottom="10dp"
+                    android:text="Capacitación"
                     android:textAlignment="center"
                     android:textColor="#de000000"
                     android:textSize="16sp"
@@ -326,5 +288,17 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
+    <TextView
+        android:id="@+id/txtNombreCarview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
