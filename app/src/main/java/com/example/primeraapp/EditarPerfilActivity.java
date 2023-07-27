@@ -17,7 +17,7 @@ public Button btnvolver;
 
         btnvolver = findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v -> {
-            startActivity(new Intent(EditarPerfilActivity.this, PerfilActivity.class));
+            startActivity(new Intent(EditarPerfilActivity.this, PdvActivity.class));
             finish();
         });
 

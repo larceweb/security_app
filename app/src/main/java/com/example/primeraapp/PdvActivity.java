@@ -10,7 +10,7 @@ import android.widget.Button;
 
 
 
-public class PerfilActivity extends AppCompatActivity {
+public class PdvActivity extends AppCompatActivity {
 
     public Button btnEditPerfil, btnvolver,btnlogout,btnPin;
    // private String rut;
@@ -23,18 +23,18 @@ public class PerfilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
-        dialogo_modal = new Dialog(PerfilActivity.this);
+        setContentView(R.layout.activity_pdv);
+        dialogo_modal = new Dialog(PdvActivity.this);
 
         btnvolver = findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v -> {
-            startActivity(new Intent(PerfilActivity.this, HomeActivity.class));
+            startActivity(new Intent(PdvActivity.this, HomeActivity.class));
             finish();
         });
 
         btnEditPerfil = findViewById(R.id.editperfil);
         btnEditPerfil.setOnClickListener(v -> {
-            startActivity(new Intent(PerfilActivity.this, EditarPerfilActivity.class));
+            startActivity(new Intent(PdvActivity.this, EditarPerfilActivity.class));
             finish();
         });
 
@@ -47,7 +47,7 @@ public class PerfilActivity extends AppCompatActivity {
 
         btnlogout=findViewById(R.id.cambiarPass);
         btnlogout.setOnClickListener(v->{
-            startActivity(new Intent(PerfilActivity.this,CambiarPassActivity.class ));
+            startActivity(new Intent(PdvActivity.this,CambiarPassActivity.class ));
             finish();
         });
 
@@ -64,7 +64,7 @@ public class PerfilActivity extends AppCompatActivity {
         btniraNoti.setOnClickListener(v -> {
 
             String Pin = "123456";// Aquí se asigna el PIN generado
-            Intent notif = new Intent(PerfilActivity.this,Notificaciones.class);
+            Intent notif = new Intent(PdvActivity.this,Notificaciones.class);
             notif.putExtra("PIN",Pin);
             startActivity(notif);
             finish();

@@ -1,7 +1,6 @@
 package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,12 +18,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        pvd = findViewById(R.id.pvd);
+        pvd = findViewById(R.id.pdv);
         chip = findViewById(R.id.chip);
         pvd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, PerfilActivity.class));
+                startActivity(new Intent(HomeActivity.this, PdvActivity.class));
                 finish();
 
             }

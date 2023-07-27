@@ -17,7 +17,7 @@ public class CambiarPassActivity extends AppCompatActivity {
 
         btnvolver=findViewById(R.id.btnvolver);
         btnvolver.setOnClickListener(v->{
-            startActivity(new Intent(CambiarPassActivity.this,PerfilActivity.class));
+            startActivity(new Intent(CambiarPassActivity.this, PdvActivity.class));
             finish();
         });
 

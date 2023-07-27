@@ -17,7 +17,7 @@
             android:background="@color/colorcaja_txt"
             android:fontFamily="@font/roboto_normal"
             android:gravity="center|bottom"
-            android:text=" Inicio"
+            android:text=" INICIO"
             android:textColor="@color/white"
             android:textSize="40sp"
             tools:ignore="MissingConstraints" />
