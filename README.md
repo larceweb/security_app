@@ -10,4 +10,4 @@
 
 - Login y password
 - presentacion de las pantallas del flujo y la iteracion con cada una de ellas
-- Notidicaciones
+- Notificaciones
